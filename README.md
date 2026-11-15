@@ -8,7 +8,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Enterprise-Workload-Protection-Vmware-Nutanix/pulls)
 [![Last Commit](https://img.shields.io/github/last-commit/ishandutta2007/Awesome-Enterprise-Workload-Protection-Vmware-Nutanix?style=flat-square)](https://github.com/ishandutta2007/Awesome-Enterprise-Workload-Protection-Vmware-Nutanix/commits/main)
-[![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Enterprise-Workload-Protection-Vmware-Nutanix?style=social)](https://github.com/ishandutta2007/Awesome-Enterprise-Workload-Protection-Vmware-Nutanix/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Enterprise-Workload-Protection-Vmware-Nutanix?style=social)](https://github.com/ishandutta2007/Awesome-Enterprise-Workload-Protection-Vmware-Nutanix/stargazers)
 [![GitHub followers](https://img.shields.io/github/followers/ishandutta2007?label=Follow)](https://github.com/ishandutta2007)
 
 **Curated Directory of Enterprise SaaS Solutions & Open-Source Tools for Hypervisor Backup, VM Snapshotting, Immutable Storage & Disaster Recovery**  
@@ -63,9 +63,9 @@ The enterprise backup and workload protection market is estimated at **$12B–$1
 
 ## 💻 Open-Source GitHub Projects
 
-Curated open-source projects for self-hosted hypervisor backups, CBT snapshotting, VM exports, and disaster recovery. Repositories are ranked by GitHub star count (descending):
+Curated open-source projects for self-hosted hypervisor backups, CBT snapshotting, VM exports, and disaster recovery. Repositories are ranked by GitHub Stars_Count (descending):
 
-| Open-Source Project | Stars | Focus & Hypervisor Support | License | Description |
+| Open-Source Project | GitHub_Stars | Focus & Hypervisor Support | License | Description |
 |---|---|---|---|---|
 | **[ghettoVCB](https://github.com/lamw/ghettoVCB)** | [![Stars](https://img.shields.io/github/stars/lamw/ghettoVCB?style=social&color=white)](https://github.com/lamw/ghettoVCB/stargazers) | **VMware ESXi** | Community | **The defacto open-source ESXi backup tool.** Executes online, live VM snapshots and backup of VMDK disks directly on VMware ESXi hosts without requiring expensive licensing. |
 | **[Bareos](https://github.com/bareos/bareos)** | [![Stars](https://img.shields.io/github/stars/bareos/bareos?style=social&color=white)](https://github.com/bareos/bareos/stargazers) | **VMware vSphere, Proxmox, Hyper-V** | AGPLv3 | **Enterprise-grade backup suite with native hypervisor plugins.** Native VMware vSphere CBT plugin for agentless VM backup and instant file restore. Bareos 25 adds native Proxmox and Hyper-V plugins. |
