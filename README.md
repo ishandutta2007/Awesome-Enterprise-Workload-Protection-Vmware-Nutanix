@@ -1,31 +1,53 @@
-# Awesome-Enterprise-Workload-Protection-Vmware-Nutanix
+<div align="center">
 
-## Top Enterprise Workload Protection (VMware/Nutanix) Ecosystem
+<img src="./assets/banner.svg" alt="Awesome Enterprise Workload Protection VMware Nutanix Banner" width="100%" />
 
-**Curated List of SaaS Platforms & Open-Source GitHub Projects**  
-*Focused on Hypervisor-Level Backup, Immutable Recovery & Self-Hosted Virtualization Protection*  
-**Last updated: March 2026**
+# 🛡️ Awesome Enterprise Workload Protection (VMware & Nutanix) 🚀
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Enterprise Workload Protection** on VMware and Nutanix. These tools help organizations protect virtual machines running on vSphere and Nutanix AHV—covering everything from agentless image-level backups and application-consistent snapshots to immutable storage and orchestrated recovery.
+[![Awesome](https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/jc4xtF58Ve)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Enterprise-Workload-Protection-Vmware-Nutanix/pulls)
+[![Last Commit](https://img.shields.io/github/last-commit/ishandutta2007/Awesome-Enterprise-Workload-Protection-Vmware-Nutanix?style=flat-square)](https://github.com/ishandutta2007/Awesome-Enterprise-Workload-Protection-Vmware-Nutanix/commits/main)
+[![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Enterprise-Workload-Protection-Vmware-Nutanix?style=social)](https://github.com/ishandutta2007/Awesome-Enterprise-Workload-Protection-Vmware-Nutanix/stargazers)
+[![GitHub followers](https://img.shields.io/github/followers/ishandutta2007?label=Follow)](https://github.com/ishandutta2007)
 
-**Examples** include Veeam Backup & Replication, Commvault Complete, Rubrik, Cohesity, NAKIVO, Bareos, and Proxmox Backup Server (the category leaders).
+**Curated Directory of Enterprise SaaS Solutions & Open-Source Tools for Hypervisor Backup, VM Snapshotting, Immutable Storage & Disaster Recovery**  
+*Covering VMware vSphere, ESXi, Nutanix AHV, and Alternative Modern Hypervisors* ⚡
 
-**Open-source emphasis**: This section highlights every major active project for self-hosted virtualization backup, open-source hypervisor protection, and community-driven data recovery—ideal for organizations seeking data sovereignty and avoiding per-VM or per-socket commercial licensing. The open-source landscape is genuinely functional: **Bareos** provides native VMware vSphere and Proxmox plugins with enterprise-grade architecture , **NAKIVO** offers a commercial solution with explicit Nutanix AHV support , and **Proxmox Backup Server** delivers chunk-level deduplication for Proxmox environments .
+</div>
 
-Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
+---
 
-## Table of Contents
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS/Hosted Platforms](#saashosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
+## 📌 Executive Summary & Architecture Scope
 
-## Sector Overview & Market Dynamics
+This curated repository tracks the leading **enterprise SaaS platforms** and **open-source GitHub projects** for **Enterprise Workload Protection** across **VMware vSphere / ESXi** and **Nutanix AHV**. 
 
-The enterprise backup and workload protection market is estimated at **$12B–$15B** globally (projected to reach **$30B+ by the early 2030s** at an ~11% CAGR). The sector exhibits an oligopolistic, moderately concentrated core at the high-end enterprise tier—dominated by a handful of multibillion-dollar cyber resilience platforms (Veeam, Commvault, Rubrik, and Cohesity/Veritas)—yet remains fragmented at the perimeter and SMB edge where specialized point solutions compete to secure multi-cloud, container, and alternative hypervisor environments.
+Modern virtualization disaster recovery requires more than simple VMDK file copies:
+- ⚡ **Agentless CBT Backups:** Utilizing VMware Changed Block Tracking (CBT) and Nutanix Prism APIs for zero-impact, incremental-forever workload snapshots.
+- 🔒 **Ransomware Cyber Resilience & Immutability:** S3 Object Lock, air-gapped repositories, and WORM-compliant immutable targets to guarantee unalterable restore points.
+- 🔄 **Live Mount & Instant Recovery:** Instantly powering on VMs directly from deduplicated backup storage without waiting for multi-terabyte data transfers.
+- 🌐 **Sovereignty & Multi-Hypervisor Portability:** Self-hosted open-source backup engines for organizations migrating between VMware, Nutanix AHV, Proxmox VE, and KubeVirt.
 
-## SaaS/Hosted Platforms
+---
+
+## 📑 Table of Contents
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Hosted Enterprise Platforms](#️-saas--hosted-enterprise-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
+- [⚠️ Disclaimer](#️-disclaimer)
+- [📈 Star History](#-star-history)
+
+---
+
+## 📊 Sector Overview & Market Dynamics
+
+The enterprise backup and workload protection market is estimated at **$12B–$15B** globally (projected to exceed **$30B+ by the early 2030s** at an ~11% CAGR). The sector exhibits an oligopolistic, moderately concentrated core at the high-end enterprise tier—dominated by multibillion-dollar cyber resilience platforms (Veeam, Commvault, Rubrik, and Cohesity/Veritas)—yet remains fragmented at the perimeter and SMB edge where specialized point solutions compete to secure multi-cloud, container, and alternative hypervisor environments.
+
+---
+
+## ☁️ SaaS & Hosted Enterprise Platforms
 
 | Product | Company Size (Valuation / Revenue) | Description | Starting Pricing | Free Tier / Trial Limits |
 |---------|-----------------------------------|-------------|------------------|--------------------------|
@@ -37,38 +59,64 @@ The enterprise backup and workload protection market is estimated at **$12B–$1
 | **[HYCU Protégé](https://www.hycu.com/)** | **~$350M–$500M Valuation** (~$30M+ ARR) | Multi-cloud data protection with Nutanix heritage (founded as a Nutanix-focused backup solution). | **$5,000/year** (HYCU Starter Bundle for SMBs) or $1.20/user/month | **14-day free trial** (full access for HYCU R-Cloud & cloud-native backup) |
 | **[NAKIVO Backup & Replication](https://www.nakivo.com/)** | **~$30M Annual Revenue** (Bootstrapped/Private) | **Fast, reliable, and affordable protection for VMware vSphere, Microsoft Hyper-V, Nutanix AHV, and AWS EC2** [citation:10]. Positioned as a cost-effective alternative to enterprise suites. | **$2.45/workload/month** (billed annually, min. 5 workloads) | **Free Edition (1-year license)**: up to 10 workloads (VMs/servers); full trial for **15 days** |
 
-## Open-Source GitHub Projects
+---
 
-| Project | Star Badge | Description |
-|---------|------------|-------------|
-| **[Bareos](https://github.com/bareos/bareos)** | [![Stars](https://img.shields.io/github/stars/bareos/bareos?style=social&color=white)](https://github.com/bareos/bareos/stargazers) | **The most complete open-source enterprise backup suite with hypervisor plugins.** **AGPLv3 with no open-core restrictions** . **VMware vSphere plugin** for agentless VM backup and restore. **Bareos 25** adds native **Hyper-V plugin** (with Resilient Change Tracking for fast incrementals) and **Proxmox plugin** for agentless VM/container backups . **Trade-off**: **no native Nutanix AHV plugin**—AHV protection would require guest-level agents or alternative approaches. **Best for organizations with VMware and/or Proxmox** wanting proven open-source enterprise backup with tape, disk, and cloud backends . |
-| **[Proxmox Backup Server](https://github.com/proxmox/proxmox-backup)** | [![Stars](https://img.shields.io/github/stars/proxmox/proxmox-backup?style=social&color=white)](https://github.com/proxmox/proxmox-backup/stargazers) | **Open-source backup server with chunk-level deduplication for Proxmox VE.** Not designed for VMware or Nutanix AHV natively, but **can protect guest workloads** via agents. Positioned for organizations standardizing on Proxmox as a VMware alternative—the case study in search results shows **Proxmox Backup Server handling chunk-level dedup for Proxmox VE** alongside Veeam for VMware/Nutanix and NAKIVO for remote branches [citation:5]. **Best for Proxmox environments** needing efficient, self-hosted backup. |
-| **[Transiva (Community Edition)](https://github.com/zyvorai/zyvor-transiva)** | [![Stars](https://img.shields.io/github/stars/zyvorai/zyvor-transiva?style=social&color=white)](https://github.com/zyvorai/zyvor-transiva/stargazers) | **Open-source hypervisor export tool for VMware vSphere and Nutanix AHV.** **Apache-2.0 licensed**, CLI + REST, **offline export—source VM untouched until cutover** [citation:4][citation:15]. **Resumable exports** via daemon and REST—no restart from zero if transfer fails. **Not a backup product**—it exports VMs for migration or conversion (e.g., to KVM/KubeVirt). **Best for organizations planning hypervisor exit or migration** who need scriptable, agentless export from vSphere and AHV [citation:4]. |
+## 💻 Open-Source GitHub Projects
 
-### Additional Strong Open-Source Options
+Curated open-source projects for self-hosted hypervisor backups, CBT snapshotting, VM exports, and disaster recovery. Repositories are ranked by GitHub star count (descending):
 
-| Project | Star Badge | Description |
-|---------|------------|-------------|
-| **[Sofia AI (Control Plane)](https://www.linkedin.com/posts/avant-ai-technologies_casestudy-activity-7506437626611232769-e8Nq)** | — | **Not an open-source backup engine—an AI control plane that sits in front of Veeam, Proxmox Backup Server, and NAKIVO.** Case study: discovers **unprotected VMs across VMware vSphere, Proxmox VE, Hyper-V, and Nutanix AHV** by cross-referencing hypervisor inventory against backup job indexes, auto-assigns policies, and validates restores in a fenced lab [citation:5]. **Best as a reference architecture** for organizations managing heterogeneous hypervisors with multiple backup engines. |
-
-**Frameworks for building custom systems**: The open-source path to VMware/Nutanix protection is **Bareos for VMware/Proxmox** (native plugins, AGPLv3) combined with **guest-level agents for Nutanix AHV** (Bareos lacks a native AHV plugin). For migration rather than backup, **Transiva** exports VMs from vSphere and AHV for conversion to KVM. **No open-source project matches the native Nutanix AHV integration depth of Rubrik or Commvault**—those require commercial licensing [citation:2][citation:11].
-
-## How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- Workload protection platforms handle sensitive production data; enforce encryption at rest and in transit, store keys separately, and **test restores regularly**—a backup that cannot be restored is not a backup.
-- **Nutanix AHV protection has important platform-specific constraints.** **Commvault** requires all VMs in a container to belong to one protection domain for Nutanix VMware IntelliSnap backups [citation:2]. **Rubrik** notes that **AHV recovery requires locally available snapshots** (not from remote archives alone) and that **AHV export always presents disks as SCSI with CD-ROM as IDE**—guest OS must have those drivers or the exported VM will fail to boot [citation:11]. **Open-source alternatives are limited for AHV**: **Bareos has native VMware and Proxmox plugins but no Nutanix AHV plugin** . **Transiva** exports AHV VMs but is a migration tool, not a backup platform [citation:4]. **Validate hypervisor version compatibility, application consistency requirements, and restore procedures** before committing.
+| Open-Source Project | Stars | Focus & Hypervisor Support | License | Description |
+|---|---|---|---|---|
+| **[ghettoVCB](https://github.com/lamw/ghettoVCB)** | [![Stars](https://img.shields.io/github/stars/lamw/ghettoVCB?style=social&color=white)](https://github.com/lamw/ghettoVCB/stargazers) | **VMware ESXi** | Community | **The defacto open-source ESXi backup tool.** Executes online, live VM snapshots and backup of VMDK disks directly on VMware ESXi hosts without requiring expensive licensing. |
+| **[Bareos](https://github.com/bareos/bareos)** | [![Stars](https://img.shields.io/github/stars/bareos/bareos?style=social&color=white)](https://github.com/bareos/bareos/stargazers) | **VMware vSphere, Proxmox, Hyper-V** | AGPLv3 | **Enterprise-grade backup suite with native hypervisor plugins.** Native VMware vSphere CBT plugin for agentless VM backup and instant file restore. Bareos 25 adds native Proxmox and Hyper-V plugins. |
+| **[Xen Orchestra](https://github.com/vatesfr/xen-orchestra)** | [![Stars](https://img.shields.io/github/stars/vatesfr/xen-orchestra?style=social&color=white)](https://github.com/vatesfr/xen-orchestra/stargazers) | **XCP-ng, Citrix Hypervisor** | AGPLv3 | Complete web management and backup engine for virtual machines, offering continuous delta backup, metadata archiving, and orchestrated disaster recovery. |
+| **[ProxSave](https://github.com/tis24dev/proxsave)** | [![Stars](https://img.shields.io/github/stars/tis24dev/proxsave?style=social&color=white)](https://github.com/tis24dev/proxsave/stargazers) | **Proxmox VE & PBS** | GPLv3 | Go-based open-source online configuration backup and disaster recovery tool for Proxmox VE hypervisor nodes and Proxmox Backup Server. |
+| **[Proxmox Backup Server](https://github.com/proxmox/proxmox-backup)** | [![Stars](https://img.shields.io/github/stars/proxmox/proxmox-backup?style=social&color=white)](https://github.com/proxmox/proxmox-backup/stargazers) | **Proxmox VE, Guest Workloads** | AGPLv3 | Enterprise backup server with chunk-level deduplication, incremental backups, and Zstandard compression. Protects VMware/Nutanix workloads via guest agents. |
+| **[BackROLL](https://github.com/DIMSI-IS/BackROLL)** | [![Stars](https://img.shields.io/github/stars/DIMSI-IS/BackROLL?style=social&color=white)](https://github.com/DIMSI-IS/BackROLL/stargazers) | **KVM / QEMU Hypervisors** | MIT | Containerized backup and restore tool for KVM guests. Leverages QEMU guest agents and hypervisor snapshotting with a clean web management console. |
+| **[BackupZit](https://github.com/Max-Zit/backupzit)** | [![Stars](https://img.shields.io/github/stars/Max-Zit/backupzit?style=social&color=white)](https://github.com/Max-Zit/backupzit/stargazers) | **VMware ESXi, Proxmox VE, Hyper-V** | AGPLv3 | Modern self-hosted backup console with agentless VMware ESXi changed block tracking proxies, NFS instant recovery, deduplication, and S3 immutable targets. |
+| **[nutanix-backup](https://github.com/loginoff/nutanix-backup)** | [![Stars](https://img.shields.io/github/stars/loginoff/nutanix-backup?style=social&color=white)](https://github.com/loginoff/nutanix-backup/stargazers) | **Nutanix AHV** | MIT | Python utility to snapshot Nutanix AHV VMs via Prism REST APIs, mount storage containers over NFS, and export raw disk images to external backup targets. |
+| **[Transiva (Community Edition)](https://github.com/zyvorai/zyvor-transiva)** | [![Stars](https://img.shields.io/github/stars/zyvorai/zyvor-transiva?style=social&color=white)](https://github.com/zyvorai/zyvor-transiva/stargazers) | **VMware vSphere & Nutanix AHV** | Apache-2.0 | Open-source hypervisor export and migration engine. Provides resumable, offline agentless VM export from vSphere and AHV for disaster conversion into KVM/KubeVirt. |
 
 ---
 
-**Made for backup administrators, virtualization engineers, and organizations protecting critical workloads.**  
-Let's make enterprise workload protection more open, recoverable, and hypervisor-aware.
+## 🤝 How to Contribute
+
+1. 🍴 **Fork** the repository.
+2. 🌿 Create a feature branch (`git checkout -b feature/new-workload-tool`).
+3. 📝 Add or edit entries in `README.md` (keep descriptions objective and link to official documentation).
+4. 🚀 Submit a **Pull Request** with a brief summary of additions.
+
+Contributions covering new hypervisor tools, CBT plugins, and immutable storage backends are always welcome!
+
+---
+
+## 💖 Support
+
+If you find this curated collection helpful for your virtualization and disaster recovery infrastructure, please consider supporting the project:
+
+- ⭐ **Star this repository** to help others discover it.
+- 🍴 **Fork and share** it with fellow sysadmins and DevOps engineers.
+- ☕ **Buy me a coffee**: Sponsor continued maintenance and research via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Thank you for being part of the open workload protection community! 🙏
+
+---
+
+## ⚠️ Disclaimer
+
+- This is a **community-curated** list — not exhaustive and not an official vendor endorsement.
+- Workload protection platforms handle mission-critical production data. Enforce encryption at rest and in transit, store encryption keys off-site, and **test restores regularly**—a backup that cannot be restored is not a backup.
+- **Nutanix AHV protection has platform-specific constraints.** Commvault requires all VMs in a container to belong to one protection domain for IntelliSnap [citation:2]. Rubrik notes that AHV recovery requires locally available snapshots and exports disks as SCSI with CD-ROM as IDE [citation:11].
+- Validate hypervisor version compatibility, application consistency requirements, and restore SLAs before committing to an enterprise deployment.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Enterprise-Workload-Protection-Vmware-Nutanix&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Enterprise-Workload-Protection-Vmware-Nutanix&type=date&legend=top-left)
+
+---
+
+<div align="center">
+<b>Made with ❤️ for backup administrators, virtualization engineers, and site reliability teams.</b>
+</div>
