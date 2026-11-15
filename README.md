@@ -1,6 +1,6 @@
 # Awesome-Enterprise-Workload-Protection-Vmware-Nutanix
 
-# Top Enterprise Workload Protection (VMware/Nutanix) Ecosystem
+## Top Enterprise Workload Protection (VMware/Nutanix) Ecosystem
 
 **Curated List of SaaS Platforms & Open-Source GitHub Projects**  
 *Focused on Hypervisor-Level Backup, Immutable Recovery & Self-Hosted Virtualization Protection*  
