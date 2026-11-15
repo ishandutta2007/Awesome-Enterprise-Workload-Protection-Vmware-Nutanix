@@ -15,22 +15,27 @@ This repository tracks notable **SaaS platforms** and **open-source projects** f
 Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
 
 ## Table of Contents
-- [SaaS/Hosted Platforms](#saas-products)
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS/Hosted Platforms](#saashosted-platforms)
 - [Open-Source GitHub Projects](#open-source-github-projects)
 - [How to Contribute](#how-to-contribute)
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
+
+The enterprise backup and workload protection market is estimated at **$12B–$15B** globally (projected to reach **$30B+ by the early 2030s** at an ~11% CAGR). The sector exhibits an oligopolistic, moderately concentrated core at the high-end enterprise tier—dominated by a handful of multibillion-dollar cyber resilience platforms (Veeam, Commvault, Rubrik, and Cohesity/Veritas)—yet remains fragmented at the perimeter and SMB edge where specialized point solutions compete to secure multi-cloud, container, and alternative hypervisor environments.
+
 ## SaaS/Hosted Platforms
 
-| Product | Description | Pricing (Starting) | Free Tier / Trial Limits |
-|---------|-------------|-------------------|--------------------------|
-| **[Veeam Backup & Replication](https://www.veeam.com/)** | **The market standard for VMware and Nutanix AHV protection.** Agentless image-level backup, instant VM recovery, and application-aware processing. **Explicitly supports VMware vSphere, Nutanix AHV, Microsoft Hyper-V, Proxmox VE, and more** [citation:1][citation:7][citation:12]. | Community Edition: **free** (10 workloads); Standard/Enterprise: quote-only | **Free (Community Edition)**: up to 10 workloads; trial via sales |
-| **[Commvault Complete](https://www.commvault.com/)** | **Enterprise data protection with IntelliSnap for Nutanix.** Supports **Nutanix VMware IntelliSnap backups** at the container level, requiring all VMs in a container to belong to one protection domain [citation:2]. Also supports Nutanix AHV via Virtual Server Snap Engine (do not configure Snap Vendor as Nutanix for AHV) [citation:2]. | Quote-only (enterprise contract) | No free tier; trial via sales |
-| **[Rubrik](https://www.rubrik.com/)** | **Native Nutanix AHV integration with Live Mount, Instant Recovery, and file recovery.** Documentation notes **AHV recovery requires locally available snapshots** (not from remote archives alone), and export operations always present disks as SCSI with CD-ROM as IDE—**can fail to boot if guest OS lacks those drivers** [citation:11]. | Quote-only (enterprise contract) | No free tier; trial via sales |
-| **[Cohesity](https://www.cohesity.com/)** | DataProtect with **Nutanix AHV support** (listed in NetBackup Backup Now workloads and supported platforms) [citation:14]. AI-powered threat detection and immutable snapshots. | Quote-only (DPaaS per TB annually) | No free tier; trial via sales |
-| **[NAKIVO Backup & Replication](https://www.nakivo.com/)** | **Fast, reliable, and affordable protection for VMware vSphere, Microsoft Hyper-V, Nutanix AHV, and AWS EC2** [citation:10]. Positioned as a cost-effective alternative to enterprise suites. | Quote-only | **Free trial** available |
-| **[Veritas NetBackup](https://www.veritas.com/)** | Enterprise backup with **Nutanix AHV support** (listed in Backup Now workloads) [citation:14]. Broad platform coverage including VMware vSphere. | Quote-only (enterprise contract) | No free tier; trial via sales |
-| **[HYCU Protégé](https://www.hycu.com/)** | Multi-cloud data protection with Nutanix heritage (founded as a Nutanix-focused backup solution). | Quote-only (usage-based) | Free trial available |
+| Product | Company Size (Valuation / Revenue) | Description | Starting Pricing | Free Tier / Trial Limits |
+|---------|-----------------------------------|-------------|------------------|--------------------------|
+| **[Rubrik](https://www.rubrik.com/)** | **~$22B–$25B Market Cap** ($1.54B TTM Rev) | **Native Nutanix AHV integration with Live Mount, Instant Recovery, and file recovery.** Documentation notes AHV recovery requires locally available snapshots (not from remote archives alone), and export operations always present disks as SCSI with CD-ROM as IDE—can fail to boot if guest OS lacks those drivers [citation:11]. | **$130/TB/month** (~$1,560/TB/year usable BETB capacity) | **30-day free trial** (SaaS workload protection evaluation with capacity caps) |
+| **[Veeam Backup & Replication](https://www.veeam.com/)** | **~$15B Valuation** ($2.0B+ ARR) | **The market standard for VMware and Nutanix AHV protection.** Agentless image-level backup, instant VM recovery, and application-aware processing. Explicitly supports VMware vSphere, Nutanix AHV, Microsoft Hyper-V, Proxmox VE, and more [citation:1][citation:7][citation:12]. | **$120/workload/year** (VUL Universal License tier) | **Free forever (Community Edition)**: up to 10 workloads; full-featured evaluation trial for **30 days** |
+| **[Cohesity](https://www.cohesity.com/)** | **~$7B–$9B Valuation** (~$1.5B Rev combined) | DataProtect with **Nutanix AHV support** (listed in NetBackup Backup Now workloads and supported platforms) [citation:14]. AI-powered threat detection and immutable snapshots. | **$150/TB/year** (front-end capacity tier) or $29,100/year base pack | **30-day free trial** (Cohesity DataProtect / Cloud Services BaaS) |
+| **[Commvault Complete](https://www.commvault.com/)** | **~$7.2B Market Cap** ($1.25B TTM Rev) | **Enterprise data protection with IntelliSnap for Nutanix.** Supports Nutanix VMware IntelliSnap backups at the container level, requiring all VMs in a container to belong to one protection domain [citation:2]. Also supports Nutanix AHV via Virtual Server Snap Engine [citation:2]. | **$58.50/TB/month** (Commvault Cloud SaaS) or $1.70/user/month | **30-day free trial** (full evaluation access) |
+| **[Veritas NetBackup](https://www.veritas.com/)** | **~$3B+ Enterprise Value** (~$1.4B Rev) | Enterprise backup with **Nutanix AHV support** (listed in Backup Now workloads) [citation:14]. Broad platform coverage including VMware vSphere. | **$300/TB/year** (NetBackup Flex capacity-based tier) | **30-day free trial** (standard evaluation license) |
+| **[HYCU Protégé](https://www.hycu.com/)** | **~$350M–$500M Valuation** (~$30M+ ARR) | Multi-cloud data protection with Nutanix heritage (founded as a Nutanix-focused backup solution). | **$5,000/year** (HYCU Starter Bundle for SMBs) or $1.20/user/month | **14-day free trial** (full access for HYCU R-Cloud & cloud-native backup) |
+| **[NAKIVO Backup & Replication](https://www.nakivo.com/)** | **~$30M Annual Revenue** (Bootstrapped/Private) | **Fast, reliable, and affordable protection for VMware vSphere, Microsoft Hyper-V, Nutanix AHV, and AWS EC2** [citation:10]. Positioned as a cost-effective alternative to enterprise suites. | **$2.45/workload/month** (billed annually, min. 5 workloads) | **Free Edition (1-year license)**: up to 10 workloads (VMs/servers); full trial for **15 days** |
 
 ## Open-Source GitHub Projects
 
